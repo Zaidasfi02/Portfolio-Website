@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Zaid Asfi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Zaid Asfi</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="section full-screen">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my work, skills, and expertise.</p>
+            <img src="IMG_20250207_111345.jpg" alt="Zaid Asfi" class="hero-image">
+        </div>
+    </section>
+
+    <section id="about" class="section full-screen">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I am a Mechanical Engineer transitioning into the IT industry. With a strong foundation in web development and backend development using Java, I am building expertise in the tech field. My goal is to leverage my technical skills to excel in IT roles, especially focusing on web technologies and Java-based backend development.</p>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, Core Java, Python</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Frameworks:</strong> JDBC, Hibernate, Spring, Spring Boot</li>
+                <li><strong>Frontend Libraries:</strong> React JS, Bootstrap, Tailwind</li>
+                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Database:</strong> MySQL, SQL</li>
+                <li><strong>Other:</strong> AutoCAD</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section full-screen">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>StopWatch</h3>
+                    <p>A simple stopwatch application built with HTML, CSS, and JavaScript.</p>
+                    <img src="clock.png" alt="StopWatch Project">
+                    <a href="https://zaidasfi02.github.io/StopWatch/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Password Generator</h3>
+                    <p>Generate random passwords with a sleek UI.</p>
+                    <img src="pc.jpg" alt="Password Generator Project">
+                    <a href="https://zaidasfi02.github.io/Random-Password-Generator/" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section full-screen">
+        <div class="content">
+            <h2>My Resume</h2>
+            <embed src="zaid-asfi.pdf" type="application/pdf" width="100%" height="500px">
+            <a href="zaid-asfi.pdf" download class="download-btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section full-screen">
+        <div class="content">
+            <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: zaidasfi786@gmail.com</p>
+      <p>Get in touch.</p>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/your-profile"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/Zaidasfi02"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/your-profile"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+    
+    <div id="chatbot">
+        <div id="chat-window">
+            <p>Chatbot: How can I assist you?</p>
+        </div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Zaid Asfi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
